@@ -1,5 +1,6 @@
 import React from 'react';
 import { Award, MapPin, Users } from 'lucide-react';
+import team2Photo from '../assets/team2.jpg';
 
 const WhoWeAre = () => {
     return (
@@ -47,19 +48,23 @@ const WhoWeAre = () => {
                     <div className="absolute inset-0 bg-cyber-green/20 translate-x-4 translate-y-4 rounded-lg hidden md:block"></div>
                     <div className="relative rounded-lg overflow-hidden shadow-2xl border border-slate/10 group">
                         <div className="absolute inset-0 bg-navy/40 group-hover:bg-transparent transition-all duration-500 z-10"></div>
-                        {/* Placeholder for Team Photo */}
+
                         <div className="aspect-video bg-navy-light flex items-center justify-center relative overflow-hidden">
                             <img
-                                src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
-                                alt="Johnson High School CyberPatriot Team working together"
+                                src={team2Photo}
+                                alt="Johnson High School CyberPatriot Team"
                                 className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                             />
                             <div className="absolute bottom-4 left-4 z-20 bg-navy/80 backdrop-blur px-4 py-2 rounded border border-cyber-green/30">
-                                <span className="text-cyber-green font-mono text-xs">TEAM_02_JHS // CLASSIFIED</span>
+                                <span className="text-cyber-green font-mono text-xs">
+                                    TEAM_02_JHS // CLASSIFIED
+                                </span>
                             </div>
                         </div>
+
                     </div>
                 </div>
+
             </div>
         </section>
     );
