@@ -3,7 +3,7 @@ import { Copy, Mail, AlertTriangle, Check } from 'lucide-react';
 
 const Donate = () => {
     const [copied, setCopied] = useState(false);
-    const email = "contact@jagscyber.com"; // Placeholder email
+    const email = "sponsorship@jagscyber.com"; // Placeholder email
 
     const handleCopy = () => {
         navigator.clipboard.writeText(email);
@@ -43,7 +43,7 @@ const Donate = () => {
                                 <p className="text-slate-light mb-4">
                                     For security and privacy reasons, the mailing address is not listed publicly.
                                 </p>
-                                <a href="mailto:contact@jagscyber.com" className="inline-flex items-center gap-2 text-cyber-green font-mono text-sm hover:underline underline-offset-4">
+                                <a href="mailto:sponsorship@jagscyber.com" className="inline-flex items-center gap-2 text-cyber-green font-mono text-sm hover:underline underline-offset-4">
                                     <Mail size={16} /> Email us for the mailing address
                                 </a>
                             </div>

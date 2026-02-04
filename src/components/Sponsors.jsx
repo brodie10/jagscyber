@@ -87,7 +87,7 @@ const SponsorCard = ({ tier, price, color, features, featured = false, delay }) 
             </div>
 
             <a
-                href={`mailto:contact@jagscyber.com?subject=Sponsorship Inquiry: ${tier} Tier`}
+                href={`mailto:sponsorship@jagscyber.com?subject=Sponsorship Inquiry: ${tier} Tier`}
                 className={`w-full py-3 rounded font-bold font-mono transition-all duration-300 uppercase tracking-wide text-sm block text-center ${styles.button}`}
             >
                 Select Tier
@@ -172,7 +172,6 @@ const Sponsors = () => {
                         tier="Diamond"
                         price="$1,000+"
                         color="text-cyan-400"
-                        featured={true}
                         features={["Large Logo on Team Jersey", "Large Logo on Banner", "VIP Invitation to Events", "All Platinum Benefits"]}
                         delay={0.6}
                     />
@@ -186,7 +185,7 @@ const Sponsors = () => {
                     transition={{ delay: 0.8 }}
                     className="flex flex-col md:flex-row justify-center gap-6"
                 >
-                    <a href="mailto:contact@jagscyber.com" className="group flex items-center justify-center gap-3 px-8 py-4 bg-cyber-green text-navy font-bold rounded hover:bg-cyber-green/90 transition-all font-mono shadow-[0_0_20px_rgba(100,255,218,0.3)] hover:shadow-[0_0_30px_rgba(100,255,218,0.5)]">
+                    <a href="mailto:sponsorship@jagscyber.com" className="group flex items-center justify-center gap-3 px-8 py-4 bg-cyber-green text-navy font-bold rounded hover:bg-cyber-green/90 transition-all font-mono shadow-[0_0_20px_rgba(100,255,218,0.3)] hover:shadow-[0_0_30px_rgba(100,255,218,0.5)]">
                         <Mail className="group-hover:rotate-12 transition-transform" /> Email Sponsorship Team
                     </a>
                     <a href="/sponsor-packet.pdf" download className="group flex items-center justify-center gap-3 px-8 py-4 border-2 border-slate/30 text-slate-light font-bold rounded hover:border-slate-light hover:bg-slate-light/5 transition-all font-mono">

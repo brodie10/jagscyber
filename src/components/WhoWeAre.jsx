@@ -15,7 +15,7 @@ const WhoWeAre = () => {
                     <div className="w-20 h-1 bg-cyber-green mb-8 rounded-full"></div>
 
                     <p className="text-slate text-lg leading-relaxed mb-6">
-                        We are <span className="text-cyber-green font-bold">Team 2</span> from Jags (San Antonio, TX).
+                        We are <span className="text-cyber-green font-bold">Team 2</span> from San Antonio, TX.
                         For the second year in a row, we have qualified as one of the
                         <span className="text-slate-light font-semibold"> top 12 teams in the nation</span> out of thousands of competitors.
                     </p>
