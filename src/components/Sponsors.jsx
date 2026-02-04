@@ -135,16 +135,15 @@ const Sponsors = () => {
                         delay={0.4}
                     />
                     <SponsorCard
-                        tier="Gold"
-                        price="$1,500+"
-                        featured={true}
-                        features={["Large Logo on Team Jersey", "Large Logo on Banner", "VIP Invitation to Events", "All Silver & Bronze Benefits"]}
-                        delay={0.5}
-                    />
-                    <SponsorCard
                         tier="Silver"
                         price="$750 - $1,500"
                         features={["Medium Logo on Banner", "Logo on Presentation Slides", "All Bronze Benefits"]}
+                        delay={0.5}
+                    />
+                    <SponsorCard
+                        tier="Gold"
+                        price="$1,500+"
+                        features={["Large Logo on Team Jersey", "Large Logo on Banner", "VIP Invitation to Events", "All Silver & Bronze Benefits"]}
                         delay={0.6}
                     />
                 </div>
