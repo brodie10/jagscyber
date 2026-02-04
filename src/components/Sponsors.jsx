@@ -130,20 +130,20 @@ const Sponsors = () => {
                 <div className="grid md:grid-cols-3 gap-8 items-start max-w-6xl mx-auto mb-20">
                     <SponsorCard
                         tier="Bronze"
-                        price="$500+"
+                        price="Under $750"
                         features={["Logo on Website", "Social Media Shoutout", "Certificate of Appreciation"]}
                         delay={0.4}
                     />
                     <SponsorCard
                         tier="Gold"
-                        price="$5,000+"
+                        price="$1,500+"
                         featured={true}
                         features={["Large Logo on Team Jersey", "Large Logo on Banner", "VIP Invitation to Events", "All Silver & Bronze Benefits"]}
                         delay={0.5}
                     />
                     <SponsorCard
                         tier="Silver"
-                        price="$1,000+"
+                        price="$750 - $1,500"
                         features={["Medium Logo on Banner", "Logo on Presentation Slides", "All Bronze Benefits"]}
                         delay={0.6}
                     />
