@@ -1,5 +1,5 @@
 import React from 'react';
-import { Download, Mail, CheckCircle, ShieldCheck, FileCheck, Heart, Globe } from 'lucide-react';
+import { Download, Mail, CheckCircle, ShieldCheck, Heart, Globe } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const BenefitCard = ({ icon: Icon, title, description, delay }) => (
@@ -120,17 +120,10 @@ const Sponsors = () => {
                 </div>
 
                 {/* Benefits / Impact */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-24 border-y border-slate/10 py-12 bg-navy-light/20 relative">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-24 border-y border-slate/10 py-12 bg-navy-light/20 relative">
                     {/* Decorative vertical dividers for desktop */}
-                    <div className="hidden md:block absolute top-12 bottom-12 left-1/3 w-px bg-slate/10"></div>
-                    <div className="hidden md:block absolute top-12 bottom-12 right-1/3 w-px bg-slate/10"></div>
+                    <div className="hidden md:block absolute top-12 bottom-12 left-1/2 w-px bg-slate/10"></div>
 
-                    <BenefitCard
-                        icon={FileCheck}
-                        title="Tax Deductible"
-                        description="We are a 501(c)(3) organization. All contributions are tax-deductible."
-                        delay={0.1}
-                    />
                     <BenefitCard
                         icon={Heart}
                         title="Support STEM"
