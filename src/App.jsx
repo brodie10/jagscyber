@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import WhoWeAre from './components/WhoWeAre';
+import Roadmap from './components/Roadmap';
 import Sponsors from './components/Sponsors';
 import Donate from './components/Donate';
 import Footer from './components/Footer';
@@ -13,6 +14,7 @@ function App() {
       <main>
         <Hero />
         <WhoWeAre />
+        <Roadmap />
         <Sponsors />
         <Donate />
       </main>

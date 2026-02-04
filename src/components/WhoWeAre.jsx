@@ -17,7 +17,7 @@ const WhoWeAre = () => {
                     <p className="text-slate text-lg leading-relaxed mb-6">
                         We are <span className="text-cyber-green font-bold">Team 2</span> from San Antonio, TX.
                         For the second year in a row, we have qualified as one of the
-                        <span className="text-slate-light font-semibold"> top 12 teams in the nation</span> out of thousands of competitors.
+                        <span className="text-slate-light font-semibold"> top 10 teams in the nation</span> out of thousands of competitors.
                     </p>
 
                     <div className="bg-navy-dark border-l-4 border-cyber-green p-6 mb-8 rounded-r-lg">
