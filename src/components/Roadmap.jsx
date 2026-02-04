@@ -6,10 +6,10 @@ const milestones = [
     {
         title: "Mission Start: Round 1",
         date: "October 2025",
-        description: "Official kickoff. Secured a top 1% score internationally, establishing early dominance in the season.",
+        description: "Official kickoff. Ranked #70 Nationally in the Open Division, establishing early dominance in the season.",
         icon: Terminal,
         status: "completed",
-        stats: "Score: 100/100"
+        stats: "Score: 222/230"
     },
     {
         title: "Round 2: Escalation",
