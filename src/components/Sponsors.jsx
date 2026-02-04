@@ -21,26 +21,33 @@ const BenefitCard = ({ icon: Icon, title, description, delay }) => (
 const SponsorCard = ({ tier, price, color, features, featured = false, delay }) => {
     // Dynamic styles based on tier
     const styles = {
+        diamond: {
+            border: 'border-cyan-400/50',
+            text: 'text-cyan-400',
+            glow: 'shadow-[0_0_30px_rgba(34,211,238,0.2)]',
+            bg: 'bg-gradient-to-b from-navy-light/90 to-navy-light/60',
+            button: 'bg-cyan-400 text-navy hover:bg-cyan-400/80',
+        },
+        platinum: {
+            border: 'border-slate-300/50',
+            text: 'text-slate-300',
+            glow: 'shadow-[0_0_20px_rgba(203,213,225,0.15)]',
+            bg: 'bg-navy-light/85',
+            button: 'bg-slate-300 text-navy hover:bg-slate-300/80',
+        },
         gold: {
             border: 'border-gold/50',
             text: 'text-gold',
-            glow: 'shadow-[0_0_30px_rgba(255,215,0,0.15)]',
-            bg: 'bg-gradient-to-b from-navy-light/90 to-navy-light/60',
-            button: 'bg-gold text-navy hover:bg-gold/80',
-        },
-        silver: {
-            border: 'border-silver/50',
-            text: 'text-silver',
-            glow: 'shadow-[0_0_20px_rgba(192,192,192,0.1)]',
+            glow: 'shadow-[0_0_20px_rgba(255,215,0,0.1)]',
             bg: 'bg-navy-light/80',
-            button: 'bg-transparent border border-silver text-silver hover:bg-silver/10',
+            button: 'bg-transparent border border-gold text-gold hover:bg-gold/10',
         },
-        bronze: {
-            border: 'border-bronze/50',
-            text: 'text-bronze',
+        individual: {
+            border: 'border-cyber-green/30',
+            text: 'text-cyber-green',
             glow: 'shadow-none',
             bg: 'bg-navy-light/60',
-            button: 'bg-transparent border border-bronze text-bronze hover:bg-bronze/10',
+            button: 'bg-transparent border border-cyber-green text-cyber-green hover:bg-cyber-green/10',
         }
     }[tier.toLowerCase()];
 
@@ -58,13 +65,13 @@ const SponsorCard = ({ tier, price, color, features, featured = false, delay }) 
             `}
         >
             {featured && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gold text-navy font-bold font-mono px-4 py-1 rounded-full text-sm flex items-center gap-2 shadow-lg shadow-gold/20">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-cyan-400 text-navy font-bold font-mono px-4 py-1 rounded-full text-sm flex items-center gap-2 shadow-lg shadow-cyan-400/20">
                     <ShieldCheck size={16} /> MOST POPULAR
                 </div>
             )}
 
             <div className="text-center mb-8">
-                <h3 className={`text-4xl font-display font-bold uppercase mb-2 ${styles.text} tracking-wider`}>{tier}</h3>
+                <h3 className={`text-3xl font-display font-bold uppercase mb-2 ${styles.text} tracking-wider`}>{tier}</h3>
                 <div className="flex items-center justify-center gap-1 opacity-80">
                     <span className="text-slate-light font-mono text-xl">{price}</span>
                 </div>
@@ -142,23 +149,31 @@ const Sponsors = () => {
                 </div>
 
                 {/* Tiers Grid */}
-                <div className="grid md:grid-cols-3 gap-8 items-start max-w-6xl mx-auto mb-20">
+                <div className="grid md:grid-cols-4 gap-6 items-start max-w-7xl mx-auto mb-20">
                     <SponsorCard
-                        tier="Bronze"
-                        price="Under $750"
+                        tier="Individual"
+                        price="$50+"
+                        features={["Name listed on Website", "Social Media Shoutout"]}
+                        delay={0.3}
+                    />
+                    <SponsorCard
+                        tier="Gold"
+                        price="$250"
                         features={["Logo on Website", "Social Media Shoutout", "Certificate of Appreciation"]}
                         delay={0.4}
                     />
                     <SponsorCard
-                        tier="Silver"
-                        price="$750 - $1,500"
-                        features={["Medium Logo on Banner", "Logo on Presentation Slides", "All Bronze Benefits"]}
+                        tier="Platinum"
+                        price="$500"
+                        features={["Logo on Banner (Medium)", "Logo on Presentation Slides", "All Gold Benefits"]}
                         delay={0.5}
                     />
                     <SponsorCard
-                        tier="Gold"
-                        price="$1,500+"
-                        features={["Large Logo on Team Jersey", "Large Logo on Banner", "VIP Invitation to Events", "All Silver & Bronze Benefits"]}
+                        tier="Diamond"
+                        price="$1,000+"
+                        color="text-cyan-400"
+                        featured={true}
+                        features={["Large Logo on Team Jersey", "Large Logo on Banner", "VIP Invitation to Events", "All Platinum Benefits"]}
                         delay={0.6}
                     />
                 </div>
