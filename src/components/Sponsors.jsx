@@ -1,20 +1,20 @@
 import React from 'react';
-import { Download, Mail, CheckCircle, ShieldCheck, Users, Trophy, Rocket } from 'lucide-react';
+import { Download, Mail, CheckCircle, ShieldCheck, FileCheck, Heart, Globe } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-const StatCard = ({ icon: Icon, value, label, delay }) => (
+const BenefitCard = ({ icon: Icon, title, description, delay }) => (
     <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay }}
-        className="bg-navy-light/50 backdrop-blur-sm border border-slate/10 p-6 rounded-lg text-center group hover:border-cyber-green/30 transition-colors"
+        className="flex flex-col items-center text-center p-6"
     >
-        <div className="bg-navy p-3 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 group-hover:bg-cyber-green/10 transition-colors">
-            <Icon className="text-cyber-green" size={24} />
+        <div className="bg-navy-light p-4 rounded-full mb-4 border border-slate/10 shadow-[0_0_15px_rgba(100,255,218,0.1)] group-hover:border-cyber-green/30 transition-colors">
+            <Icon className="text-cyber-green" size={28} />
         </div>
-        <div className="text-3xl font-display font-bold text-slate-light mb-1">{value}</div>
-        <div className="text-slate text-sm font-mono uppercase tracking-wider">{label}</div>
+        <h4 className="text-xl font-display font-bold text-slate-light mb-2">{title}</h4>
+        <p className="text-slate text-sm leading-relaxed max-w-xs">{description}</p>
     </motion.div>
 );
 
@@ -119,11 +119,30 @@ const Sponsors = () => {
                     </motion.p>
                 </div>
 
-                {/* Impact Stats */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-20">
-                    <StatCard icon={Users} value="40+" label="Active Students" delay={0.1} />
-                    <StatCard icon={Trophy} value="12" label="Regional Awards" delay={0.2} />
-                    <StatCard icon={Rocket} value="100%" label="College Placement" delay={0.3} />
+                {/* Benefits / Impact */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-24 border-y border-slate/10 py-12 bg-navy-light/20 relative">
+                    {/* Decorative vertical dividers for desktop */}
+                    <div className="hidden md:block absolute top-12 bottom-12 left-1/3 w-px bg-slate/10"></div>
+                    <div className="hidden md:block absolute top-12 bottom-12 right-1/3 w-px bg-slate/10"></div>
+
+                    <BenefitCard
+                        icon={FileCheck}
+                        title="Tax Deductible"
+                        description="We are a 501(c)(3) organization. All contributions are tax-deductible."
+                        delay={0.1}
+                    />
+                    <BenefitCard
+                        icon={Heart}
+                        title="Support STEM"
+                        description="Directly fund equipment and travel for the next generation of cyber defenders."
+                        delay={0.2}
+                    />
+                    <BenefitCard
+                        icon={Globe}
+                        title="Brand Visibility"
+                        description="Showcase your support to our community, parents, and future tech leaders."
+                        delay={0.3}
+                    />
                 </div>
 
                 {/* Tiers Grid */}
