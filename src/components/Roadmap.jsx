@@ -22,10 +22,10 @@ const milestones = [
     {
         title: "State Championship",
         date: "January 2026",
-        description: "Platinum Tier Regional Finalists. Outperformed 4,000+ teams to secure a crucial qualification spot.",
+        description: "Ranked #13 Nationally in the Platinum Open Division. Outperformed 4,000+ teams to secure a crucial qualification spot.",
         icon: Trophy,
         status: "completed",
-        stats: "Rank: 1st Place (Platinum)"
+        stats: "Score: 368.1/400"
     },
     {
         title: "Target: Nationals",
