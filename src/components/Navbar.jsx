@@ -43,7 +43,7 @@ const Navbar = () => {
                 <a href="#" className="flex items-center gap-2 group" onClick={(e) => scrollToSection(e, '#hero')}>
                     <Shield className="w-8 h-8 text-cyber-green group-hover:drop-shadow-[0_0_8px_rgba(100,255,218,0.5)] transition-all" />
                     <span className="font-display font-bold text-xl md:text-2xl text-slate-light tracking-wide">
-                        JHS <span className="text-cyber-green">CYBER</span>PATRIOT
+                        TEAM2 <span className="text-cyber-green">CYBER</span>PATRIOT
                     </span>
                 </a>
 

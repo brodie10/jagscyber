@@ -29,7 +29,7 @@ const WhoWeAre = () => {
                     {/* Stats */}
                     <div className="grid grid-cols-3 gap-4 border-t border-slate/10 pt-8">
                         <div className="text-center md:text-left">
-                            <div className="text-3xl font-display font-bold text-slate-light mb-1">Top 12</div>
+                            <div className="text-3xl font-display font-bold text-slate-light mb-1">Top 10</div>
                             <div className="text-xs font-mono text-cyber-green">NATIONALLY</div>
                         </div>
                         <div className="text-center md:text-left border-l border-slate/10 pl-4">
