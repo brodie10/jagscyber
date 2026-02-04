@@ -79,9 +79,12 @@ const SponsorCard = ({ tier, price, color, features, featured = false, delay }) 
                 ))}
             </div>
 
-            <button className={`w-full py-3 rounded font-bold font-mono transition-all duration-300 uppercase tracking-wide text-sm ${styles.button}`}>
+            <a
+                href={`mailto:contact@jagscyber.com?subject=Sponsorship Inquiry: ${tier} Tier`}
+                className={`w-full py-3 rounded font-bold font-mono transition-all duration-300 uppercase tracking-wide text-sm block text-center ${styles.button}`}
+            >
                 Select Tier
-            </button>
+            </a>
         </motion.div>
     );
 };
