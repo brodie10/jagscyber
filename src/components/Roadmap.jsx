@@ -14,10 +14,10 @@ const milestones = [
     {
         title: "Round 2: Escalation",
         date: "November 2025",
-        description: "Advanced challenges. Maintained perfect operational status across all images.",
+        description: "Advanced challenges. Ranked #19 Nationally in the Platinum Open Division.",
         icon: Shield,
         status: "completed",
-        stats: "Score: 100/100"
+        stats: "Score: 323.4/330"
     },
     {
         title: "State Championship",
