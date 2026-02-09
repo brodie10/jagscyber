@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Terminal, Shield, Trophy, Target } from 'lucide-react';
+import { Terminal, Shield, Trophy, Target, MapPin } from 'lucide-react';
 
 const milestones = [
     {
@@ -34,6 +34,14 @@ const milestones = [
         icon: Target,
         status: "completed",
         stats: "Score: 471.19/620"
+    },
+    {
+        title: "National Competition",
+        date: "March 2026",
+        description: "The National Finals. Top 12 teams in the nation converge to battle for the championship title.",
+        icon: MapPin,
+        status: "current",
+        stats: "Results: TBD"
     }
 ];
 
