@@ -1,5 +1,7 @@
 import React from 'react';
 import { ArrowRight, Terminal } from 'lucide-react';
+import TypingEffect from './TypingEffect';
+import ParticlesBackground from './ParticlesBackground';
 
 const Hero = () => {
     const scrollToSponsors = () => {
@@ -18,9 +20,9 @@ const Hero = () => {
 
     return (
         <section id="hero" className="min-h-screen flex flex-col justify-center items-center relative overflow-hidden pt-20">
-            {/* Background Decor */}
             <div className="absolute inset-0 bg-navy z-0">
                 <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,rgba(17,34,64,0.7),rgba(10,25,47,1))]"></div>
+                <ParticlesBackground />
                 {/* Grid Pattern overlay */}
                 <div className="absolute inset-0 opacity-10"
                     style={{ backgroundImage: 'linear-gradient(#CCD6F6 1px, transparent 1px), linear-gradient(90deg, #CCD6F6 1px, transparent 1px)', backgroundSize: '40px 40px' }}>
@@ -30,7 +32,7 @@ const Hero = () => {
             <div className="z-10 text-center max-w-5xl px-6 animate-fade-in-up">
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyber-green/10 border border-cyber-green/30 text-cyber-green font-mono text-sm mb-6">
                     <Terminal size={14} />
-                    <span>Target Acquired: Washington D.C.</span>
+                    <TypingEffect text="Target Acquired: Washington D.C." />
                 </div>
 
                 <h2 className="text-slate text-lg md:text-xl font-mono mb-4 tracking-wider">
