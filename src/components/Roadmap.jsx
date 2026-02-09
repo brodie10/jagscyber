@@ -33,7 +33,7 @@ const milestones = [
         description: "Ranked #10 Nationally in the Platinum Open Division. Qualified for the National Finals as one of the top 12 teams.",
         icon: Target,
         status: "completed",
-        stats: "Score: 471.19"
+        stats: "Score: 471.19/620"
     }
 ];
 
