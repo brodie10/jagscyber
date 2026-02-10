@@ -7,14 +7,17 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "update-donations": "node scripts/update-donations.js"
   },
   "dependencies": {
     "clsx": "^2.1.1",
     "framer-motion": "^12.30.0",
+    "jsdom": "^28.0.0",
     "lucide-react": "^0.563.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
+    "react-router-dom": "^7.13.0",
     "tailwind-merge": "^3.4.0"
   },
   "devDependencies": {

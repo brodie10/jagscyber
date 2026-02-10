@@ -1,25 +1,33 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import WhoWeAre from './components/WhoWeAre';
-import Roadmap from './components/Roadmap';
-import Sponsors from './components/Sponsors';
-import Donate from './components/Donate';
 import Footer from './components/Footer';
+import Home from './pages/Home';
+import DonationTracker from './pages/DonationTracker';
+import { useEffect } from 'react';
+
+// Scroll to top on route change
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+};
 
 function App() {
   return (
-    <div className="bg-navy min-h-screen text-slate selection:bg-cyber-green selection:text-navy-dark">
-      <Navbar />
-      <main>
-        <Hero />
-        <WhoWeAre />
-        <Roadmap />
-        <Sponsors />
-        <Donate />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <ScrollToTop />
+      <div className="bg-navy min-h-screen text-slate selection:bg-cyber-green selection:text-navy-dark">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/donations" element={<DonationTracker />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
